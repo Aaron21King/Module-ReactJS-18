@@ -10,6 +10,8 @@ function App() {
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
   const [photoURL, setPhotoURL] = useState("");
+  const [amount, setAmount] = useState(null);
+  //const [amountPesos, setAmountPesos] = useState(0);
 
   const [koders, setKoders] = useState([
     {
@@ -69,6 +71,19 @@ function App() {
 
   console.log(koders, "KODERS");
 
+  const USD = 20.21;
+  const handleChangeAmount = ({ target: { value } }) => {
+    const newAmount = Number(value);
+    setAmount(newAmount);
+    
+  };
+  //const Pesos = 20.21;
+  //const handleChangeAmountPesos = ({ target: { value } }) => {
+   // const newAmountPesos = Number(value);
+   // setAmount(newAmountPesos);
+    
+  //};
+
   return (
     <div className="App">
       <div className="main-container">
@@ -94,8 +109,28 @@ function App() {
         />
         <button type="submit">Agregar Koder</button>
       </form>
+
+      <div>
+        <p className="title">
+          La cantidad en USD es ${!amount ? "0.00" : (amount / USD).toFixed(2)}
+        </p>
+        <input type="number" value={amount} onChange={handleChangeAmount} />
+      </div>
+      <div>
+        <p className="title">
+          La cantidad en Pesos es ${!amount ? "0.00" : (amount * USD).toFixed(2)}
+        </p>
+        <input type="number" value={amount} onChange={handleChangeAmount} />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// 1. El usuario escribe la cantidad NUMERICA EN PESOS MEXICANOS en el input
+// 3. Se renderiza el valor en dolares
+
+// Notas:
+// El input no puede recibir letras solo numeros
+// El output tiene que estar formateado a dos decimales
