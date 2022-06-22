@@ -1,4 +1,4 @@
-// Components
+
 import Card from "./components/Card";
 
 import "./App.css";
@@ -128,9 +128,3 @@ function App() {
 
 export default App;
 
-// 1. El usuario escribe la cantidad NUMERICA EN PESOS MEXICANOS en el input
-// 3. Se renderiza el valor en dolares
-
-// Notas:
-// El input no puede recibir letras solo numeros
-// El output tiene que estar formateado a dos decimales
