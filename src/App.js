@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import AppContainer from "./containers/AppContainer";
-
-// Components
-import About from "./components/About";
-import Home from "./components/Home";
-import Profile from "./components/Profile";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Editar from "./pages/Profile/editP";
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="edit" element={<Editar/>} />
         </Route>
       </Routes>
     </div>

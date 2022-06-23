@@ -1,0 +1,79 @@
+.profile-container{
+    background-image: url(https://media.gq-magazine.co.uk/photos/62389f6ad1e84d51e6d8df07/master/pass/210322_DC_HP.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: 40rem 20rem 10rem ;
+}
+.name{
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position :relative;
+    top: 20rem;
+    right: 35rem;
+    font-size: 38px;
+
+}
+.email{
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position :relative;
+    top: 12.5rem; right: 35rem;
+    font-size: 23px;
+
+}
+.age{
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position :relative;
+    top: 20.5rem; right: 35rem;
+    font-size: 23px;
+
+
+}
+
+.phone{
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position :relative;
+    top: 14rem; right: 35rem;
+    font-size: 23px;
+
+
+}
+
+.education{
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position :relative;
+    top: 22rem; right: 35rem;
+    font-size: 23px;
+
+
+}
+.hello{
+    position: relative;
+    top:16.5rem; 
+    font-size: 50px;
+}
+
+#pictureP{
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top:20.5rem; left:15rem;
+}
+.boton{
+    background-color: darkblue;
+    color: white;
+    width: 12rem; height: 2rem;
+    position: relative;
+    top: -0.2rem; left:50rem;
+}
