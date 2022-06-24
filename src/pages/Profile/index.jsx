@@ -12,10 +12,7 @@ export default function Profile() {
         <div className="email">aaron@gmail.com</div>
         <div className="phone">6691008819</div>
         <div className="hello">Hola, soy Aaron y este es mi perfil de Aaron Page!!</div>
-
-
-        <Link to="editP">
-        <button className="boton">Editar perfil</button></Link>
+        <Link to="editP"><button className="boton">Editar perfil</button></Link>
 
         
         
