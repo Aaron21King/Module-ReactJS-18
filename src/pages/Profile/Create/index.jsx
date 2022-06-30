@@ -1,14 +1,9 @@
 import { useState } from "react";
 import { create as createUser } from "../../../services/users";
-
-//componets
 import Inputs from "../../../components/Inputs";
-
-// CSS
 import "./Create.css";
-
 export default function ProfileCreate() {
-  // Local state
+  
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [photoURL, setPhotoURL] = useState("");
