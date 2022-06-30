@@ -3,7 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { retrieve as retrieveUser } from "../../../services/users";
 import { deleteList as deleteUsers } from "../../../services/users";
 
-import "./Detail.css";
 
 export default function ProfileDetail() {
 
